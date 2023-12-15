@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--required meta--> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--Custom css-->
+   <style>
+    #textarea{
+      animation: fadein 2s forwards ease-out;
+  }
+  @keyframes fadein {
+      from{
+          opacity: 0;
+      }
+      to{
+          opacity: 1;
+      }
+  }   
+</style>
+  </head>
+  <body class="font-mono z-0">
+    <div class="relative flex flex-col items-center justify-center h-screen overflow-hidden ">
+      <div>
+      <h1 class="text-9xl text-center mt-16 text-white z-20 opacity-70 font-bold">Spy Infiltration</h1>
+    <!-- <video autoplay muted loop id="myVideo" class="absolute inset-0 w-full h-full object-cover -z-10 opacity-90">
+      <source src="pexels_videos_1943483 (2160p).mp4" type="video/mp4">
+      Your browser does not support this video
+    </video> -->
+    
+
+ 
+   
+
+    <div id="container" class="relative container mx-auto my-10 p-8 w-screen bg-gradient-to-br from-slate-400 to-blue-100 z-30 opacity-90">
+      <div class="bg-gradient-to-br from-slate-300 to-blue-50 h-full p-10">
+      <div id="gamearea" class="">
+        <div id="details" class="">
+            <!--content-->
+            <div class="justify-content-center mx-auto text-center my-10">
+              <p id="textarea" class="text-center leading-loose font-medium text-2xl md:text-3xl md:leading-loose lg:text-4xl lg:leading-loose"></p>
+              <p id="secondtextarea" class="text-center leading-loose text-2xl"></p>
+              <!-- <p id="notificationUser" class="" ></p> -->
+              <br /><br />
+              <input type="text" id="usertext" class="text-2xl font-bold text-center" />
+            </div>
+        </div>
+        <p id="notificationUser" class="text-2xl mt-16 md:text-3xl md:leading-loose lg:text-4xl font-bold text-center" ></p>
+      </div>
+      <button id="toggleSound" onclick="toggleAudio()" class="sound-toggle-btn mt-8 bg-slate-500 text-xl text-white py-2 px-4 rounded focus:outline-none transition duration-300 hover:bg-slate-600">Music on/off</button>
+    </div>
+    </div>
+    
+  </div>
+
+  <audio id="gameAudio" autoplay loop>
+    <source src="Cambodian Odyssey.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+    <!-- link to external JavaScript-->
+    <script src="game final.js"></script>
+  </body>
+</html>
